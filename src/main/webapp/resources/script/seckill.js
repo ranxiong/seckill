@@ -115,7 +115,7 @@ var seckill = {
                 });
                 $('#killPhoneBtn').click(function () {
                     var inputPhone = $('#killPhoneKey').val();
-                    // console.log('inputPhone='+inputPhone);//TODO 调试后取消打印
+                    //console.log('inputPhone='+inputPhone);
                     if (seckill.validatePhone(inputPhone)) {
                         $.cookie('killPhone', inputPhone, {expires: 7, path: '/seckill'});
                         //刷新页面
