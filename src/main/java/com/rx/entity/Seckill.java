@@ -1,5 +1,6 @@
 package com.rx.entity;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -10,9 +11,9 @@ public class Seckill {
     private long seckillId;
     private String name;
     private int number;
-    private Date createTime;
-    private Date startTime;
-    private Date endTime;
+    private Timestamp createTime;
+    private Timestamp startTime;
+    private Timestamp endTime;
 
     public long getSeckillId() {
         return seckillId;
@@ -38,27 +39,27 @@ public class Seckill {
         this.number = number;
     }
 
-    public Date getCreateTime() {
+    public Timestamp getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Date createTime) {
+    public void setCreateTime(Timestamp createTime) {
         this.createTime = createTime;
     }
 
-    public Date getStartTime() {
+    public Timestamp getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(Date startTime) {
+    public void setStartTime(Timestamp startTime) {
         this.startTime = startTime;
     }
 
-    public Date getEndTime() {
+    public Timestamp getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(Date endTime) {
+    public void setEndTime(Timestamp endTime) {
         this.endTime = endTime;
     }
 
