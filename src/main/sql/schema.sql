@@ -17,7 +17,7 @@ CREATE  TABLE seckill(
  key idx_start_time(start_time),
  key idx_end_time(end_time)
 
-)ENGINE = InnoDB AUTO_INCREMENT=1000 DEFAULT  CHARSET=utf8 COMMENT='秒杀库存表'
+)ENGINE = InnoDB AUTO_INCREMENT=1000 DEFAULT  CHARSET=utf8 COMMENT='秒杀库存表';
 
 -- 初始化数据
 insert into seckill(name,number,start_time,end_time)
@@ -25,7 +25,7 @@ VALUES
  ('1000元秒杀iPhone6',1000,sysdate(),SYSDATE()),
  ('200元秒杀ipad2',200,sysdate(),SYSDATE()),
  ('300元秒杀小米4',300,sysdate(),SYSDATE()),
- ('400元秒杀红米note',400,sysdate(),SYSDATE())
+ ('400元秒杀红米note',400,sysdate(),SYSDATE());
 -- 秒杀成功明细表
 -- 用户登录认证相关的信息
 CREATE  TABLE success_killed(
@@ -36,7 +36,7 @@ CREATE  TABLE success_killed(
  PRIMARY  KEY  (seckill_id,user_phone),/*联合主键*/
  key idx_create_time(create_time)
 
-)ENGINE = InnoDB AUTO_INCREMENT=1000 DEFAULT  CHARSET=utf8 COMMENT='秒杀成功明细表'
+)ENGINE = InnoDB AUTO_INCREMENT=1000 DEFAULT  CHARSET=utf8 COMMENT='秒杀成功明细表';
 
 --连接数据库控制台
 mysql -uroot -p
